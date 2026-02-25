@@ -1,0 +1,163 @@
+/* User Portal Black-Gold-White Refinements */
+.user-page .sidebar {
+  border-right: 1px solid rgba(200, 166, 70, 0.24) !important;
+}
+
+.user-page .sidebar-nav a {
+  color: #5f4b18 !important;
+}
+
+.user-page .sidebar-nav a:hover,
+.user-page .sidebar-nav a.active {
+  background: #fff7e5 !important;
+  color: #3a2c0b !important;
+  border-left-color: #c8a646 !important;
+}
+
+.user-page #darkModeToggle,
+.user-page #notificationBell,
+.user-page #userMenu {
+  color: #ffffff !important;
+}
+
+.user-page .dropdown-menu {
+  border: 1px solid rgba(200, 166, 70, 0.22) !important;
+}
+.sidebar-nav a{
+    text-decoration: none;
+    color: #dc2626;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+  }
+  .sidebar-nav a:hover{
+    background: #f5f5f5;
+    color: #b91c1c;
+    transform: translateX(5px);
+    border-left-color: #dc2626;
+  }
+  .sidebar-nav a.active{
+    background: #ffe5e5;
+    color: #b91c1c;
+    border-left-color: #dc2626;
+    font-weight: 700;
+  }
+  .sidebar-nav a i{
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  /* Sidebar white background theme */
+  .sidebar {
+    background: var(--theme-white) !important;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* Ensure navbar dropdown appears above other elements (fixes dropdown not opening on profile) */
+  .navbar .dropdown-menu {
+    z-index: 2000 !important;
+  }
+
+  /* Prevent the toast container from blocking clicks when no toast is shown */
+  .position-fixed.top-0.end-0.p-3 {
+    pointer-events: none;
+  }
+  .position-fixed.top-0.end-0.p-3 .toast {
+    pointer-events: auto;
+  }
+
+  /* Modal image preview styles */
+  #imgModalImg { max-height: 80vh; width: auto; display: block; margin: 0 auto; }
+  /* Disable modal preview for specific images */
+  img.no-preview { cursor: default; }
+
+  /* Dark Mode Styles for User Pages */
+  html.dark-mode .sidebar-nav a {
+    color: #cbd5e1;
+  }
+
+  html.dark-mode .sidebar-nav a:hover {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  html.dark-mode .sidebar-nav a.active {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  html.dark-mode .sidebar {
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%) !important;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  html.dark-mode #imgModalImg {
+    filter: brightness(0.95);
+  }
+
+  html.dark-mode .list-group-item {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+  }
+
+  html.dark-mode .list-group-item.active {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+    border-color: #000000 !important;
+  }
+
+  html.dark-mode .badge {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  }
+
+  html.dark-mode .alert {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+  }
+
+  html.dark-mode .alert-info {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
+    border-color: #2d3748 !important;
+    color: white !important;
+  }
+
+  html.dark-mode .alert-warning {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+    border-color: #d97706 !important;
+    color: white !important;
+  }
+
+  html.dark-mode .alert-danger {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    border-color: #dc2626 !important;
+    color: white !important;
+  }
+
+  html.dark-mode .alert-success {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    border-color: #059669 !important;
+    color: white !important;
+  }
+
+  html.dark-mode .pagination .page-link {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e5e5e5 !important;
+  }
+
+  html.dark-mode .pagination .page-link:hover {
+    background-color: #404040 !important;
+    border-color: #404040 !important;
+    color: #e5e5e5 !important;
+  }
+
+  html.dark-mode .pagination .page-link.active {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+  }
